@@ -1,0 +1,77 @@
+<DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset=UTF-8>
+            <meta name="viewport" content="width=device-width,intial-scale=1">
+            <title>splide slider</title>
+            <!--splide css cdn-->
+            <link rel="stylesheet" type="text/css"href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+            <!--custom css-->
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+        </head>
+        <body>
+            <div class="slider_wrapper">
+                <div class="Splide">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide">
+                                <div class="img_box">
+                                    <image src="image1.jpg">
+                                </div>
+                            </div>
+                        <div class="splide__slide">
+                            <div class="img_box">
+                                <image src="image2.jpg" >
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="img_box">
+                                <image src="image3.jpg" height="100%" width="100%">
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="img_box">
+                                <image src="image4.jpg">
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="img_box">
+                                <image src="image5.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!--splide js cdn-->
+            <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+            <script type="text/javascript">
+                var splide = new Splide( '.splide', {
+  perPage: 1,
+  Permove: 1,
+  gap    : '4rem',
+  padding: '3rem',
+  type:'loop',
+  drag:'free',
+  snap:true,
+  arrows:true,
+  pagination:true,
+  autoplay:true,
+  breakpoints: {
+    640: {
+      perPage: 2,
+      gap    : '.7rem',
+      padding: '1.5rem',
+    },
+    480: {
+      perPage: 1,
+      gap    : '.7rem',
+      padding: '1.5rem',
+    },
+  },
+} );
+splide.mount();
+JavaScript
+        </script>
+    </body>
+</html>
